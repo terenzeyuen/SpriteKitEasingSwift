@@ -11,6 +11,7 @@
 		56999C22209CC12400A7D936 /* easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56999C1F209CC12300A7D936 /* easing.swift */; };
 		56999C23209CC12400A7D936 /* EasingDeclarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56999C20209CC12300A7D936 /* EasingDeclarations.swift */; };
 		56999C24209CC12400A7D936 /* SKEase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56999C21209CC12300A7D936 /* SKEase.swift */; };
+		56999C2E209CC33B00A7D936 /* SpriteKitEasingSwift_WatchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 56999C2C209CC33B00A7D936 /* SpriteKitEasingSwift_WatchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,20 @@
 		56999C1F209CC12300A7D936 /* easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = easing.swift; sourceTree = "<group>"; };
 		56999C20209CC12300A7D936 /* EasingDeclarations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasingDeclarations.swift; sourceTree = "<group>"; };
 		56999C21209CC12300A7D936 /* SKEase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKEase.swift; sourceTree = "<group>"; };
+		56999C2A209CC33B00A7D936 /* SpriteKitEasingSwift_WatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpriteKitEasingSwift_WatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56999C2C209CC33B00A7D936 /* SpriteKitEasingSwift_WatchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteKitEasingSwift_WatchOS.h; sourceTree = "<group>"; };
+		56999C2D209CC33B00A7D936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		56999C10209CC09700A7D936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56999C26209CC33B00A7D936 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				56999C16209CC09700A7D936 /* SpriteKitEasingSwift */,
+				56999C2B209CC33B00A7D936 /* SpriteKitEasingSwift-WatchOS */,
 				56999C15209CC09700A7D936 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				56999C14209CC09700A7D936 /* SpriteKitEasingSwift.framework */,
+				56999C2A209CC33B00A7D936 /* SpriteKitEasingSwift_WatchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +74,15 @@
 			path = SpriteKitEasingSwift;
 			sourceTree = "<group>";
 		};
+		56999C2B209CC33B00A7D936 /* SpriteKitEasingSwift-WatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				56999C2C209CC33B00A7D936 /* SpriteKitEasingSwift_WatchOS.h */,
+				56999C2D209CC33B00A7D936 /* Info.plist */,
+			);
+			path = "SpriteKitEasingSwift-WatchOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -69,6 +91,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				56999C19209CC09700A7D936 /* SpriteKitEasingSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56999C27209CC33B00A7D936 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56999C2E209CC33B00A7D936 /* SpriteKitEasingSwift_WatchOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +123,24 @@
 			productReference = 56999C14209CC09700A7D936 /* SpriteKitEasingSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		56999C29209CC33B00A7D936 /* SpriteKitEasingSwift-WatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56999C2F209CC33B00A7D936 /* Build configuration list for PBXNativeTarget "SpriteKitEasingSwift-WatchOS" */;
+			buildPhases = (
+				56999C25209CC33B00A7D936 /* Sources */,
+				56999C26209CC33B00A7D936 /* Frameworks */,
+				56999C27209CC33B00A7D936 /* Headers */,
+				56999C28209CC33B00A7D936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpriteKitEasingSwift-WatchOS";
+			productName = "SpriteKitEasingSwift-WatchOS";
+			productReference = 56999C2A209CC33B00A7D936 /* SpriteKitEasingSwift_WatchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -105,6 +153,9 @@
 					56999C13209CC09700A7D936 = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
+					};
+					56999C29209CC33B00A7D936 = {
+						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
@@ -121,12 +172,20 @@
 			projectRoot = "";
 			targets = (
 				56999C13209CC09700A7D936 /* SpriteKitEasingSwift */,
+				56999C29209CC33B00A7D936 /* SpriteKitEasingSwift-WatchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		56999C12209CC09700A7D936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56999C28209CC33B00A7D936 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -143,6 +202,13 @@
 				56999C24209CC12400A7D936 /* SKEase.swift in Sources */,
 				56999C22209CC12400A7D936 /* easing.swift in Sources */,
 				56999C23209CC12400A7D936 /* EasingDeclarations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56999C25209CC33B00A7D936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +388,62 @@
 			};
 			name = Release;
 		};
+		56999C30209CC33B00A7D936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KH5K7JSKH9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "SpriteKitEasingSwift-WatchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digitalworkroom.SpriteKitEasingSwift-WatchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		56999C31209CC33B00A7D936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KH5K7JSKH9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "SpriteKitEasingSwift-WatchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digitalworkroom.SpriteKitEasingSwift-WatchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +461,15 @@
 			buildConfigurations = (
 				56999C1D209CC09700A7D936 /* Debug */,
 				56999C1E209CC09700A7D936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56999C2F209CC33B00A7D936 /* Build configuration list for PBXNativeTarget "SpriteKitEasingSwift-WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56999C30209CC33B00A7D936 /* Debug */,
+				56999C31209CC33B00A7D936 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
