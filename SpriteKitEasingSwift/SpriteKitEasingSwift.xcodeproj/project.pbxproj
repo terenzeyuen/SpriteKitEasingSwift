@@ -12,6 +12,9 @@
 		56999C23209CC12400A7D936 /* EasingDeclarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56999C20209CC12300A7D936 /* EasingDeclarations.swift */; };
 		56999C24209CC12400A7D936 /* SKEase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56999C21209CC12300A7D936 /* SKEase.swift */; };
 		56999C2E209CC33B00A7D936 /* SpriteKitEasingSwift_WatchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 56999C2C209CC33B00A7D936 /* SpriteKitEasingSwift_WatchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56999C33209CC4D200A7D936 /* EasingDeclarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56999C20209CC12300A7D936 /* EasingDeclarations.swift */; };
+		56999C34209CC4D500A7D936 /* SKEase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56999C21209CC12300A7D936 /* SKEase.swift */; };
+		56999C35209CC4D800A7D936 /* easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56999C1F209CC12300A7D936 /* easing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -209,6 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56999C35209CC4D800A7D936 /* easing.swift in Sources */,
+				56999C33209CC4D200A7D936 /* EasingDeclarations.swift in Sources */,
+				56999C34209CC4D500A7D936 /* SKEase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
